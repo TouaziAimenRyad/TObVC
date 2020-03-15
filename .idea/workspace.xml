@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a9ebaec-72b0-4ebb-b267-9103679bba60" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1YJOE5PbiXLz5iHN4qnU3oeBBYT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a9ebaec-72b0-4ebb-b267-9103679bba60" name="Default Changelist" comment="" />
+      <created>1582657119088</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582657119088</updated>
+      <workItem from="1582657138027" duration="12770000" />
+      <workItem from="1582703826225" duration="3601000" />
+      <workItem from="1582708385651" duration="299000" />
+      <workItem from="1582756311847" duration="58532000" />
+      <workItem from="1583311607073" duration="201000" />
+      <workItem from="1583428272671" duration="257000" />
+      <workItem from="1583862230666" duration="5090000" />
+      <workItem from="1583909403018" duration="4987000" />
+      <workItem from="1583938556195" duration="131000" />
+      <workItem from="1583953857275" duration="10338000" />
+      <workItem from="1584021576773" duration="433000" />
+      <workItem from="1584042491872" duration="1958000" />
+      <workItem from="1584105111658" duration="8573000" />
+      <workItem from="1584172919396" duration="3002000" />
+      <workItem from="1584216013839" duration="4551000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1582890138107">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1582890138107" />
+    <state x="9" y="20" width="998" height="708" key="SettingsEditor" timestamp="1582668675719">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="9" y="20" width="998" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582668675719" />
+  </component>
+</project>
