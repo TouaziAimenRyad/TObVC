@@ -407,20 +407,31 @@ class TObVC{
      var x=enrg+this.tabBloc[bloc].information[enrg];
       y=x-this.tete.tailleMax;
 
-
-      for(j=enrg;j<x;j++){
+      if(x>this.tete.tailleMax){
+      for(j=enrg;j<this.tete.tailleMax;j++){
             n=document.getElementById('enreg'+(j+1)+'block'+bloc);
             a.animrech2(n);
             await sleep(500);
+
         }
-     if(x>this.tete.tailleMax){
+
 
         for(h=0;h<y;h++){
             n=document.getElementById('enreg'+(h+1)+'block'+(bloc+1));
             a.animrech2(n);
             await sleep(500);
         }
-     }
+      }
+      else {
+          for(j=enrg;j<x;j++){
+              n=document.getElementById('enreg'+(j+1)+'block'+bloc);
+              a.animrech2(n);
+              await sleep(500);
+
+          }
+
+      }
+
 
 
 
