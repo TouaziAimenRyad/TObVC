@@ -3,21 +3,28 @@ function animations() {
 }
 animations.prototype={
     constructor:animations(),
-    animeblockdown:function (nmrdublock) {
-        anime({
-            targets:document.getElementById('block'+(nmrdublock+1)),
-            translateY:200,
-            translateX:0,
-            duration:1000,
-            easing:'linear'
-        });
-    },
+
     animeblock:function (nmrdublock) { //pour animer lire dire///////////////////////////////////
         anime({
             targets:document.getElementById('block'+(nmrdublock)),
             translateY:[{value:300,duration:500},{value: 0}],
             translateX: 0,
              opacity:1,
+            borderColor:[{value:'#8affb1',duration:800},{
+                value: '#000000'
+            }],
+            backgroundColor:[{value:'#8affb1',duration:800},{
+                value: '#ffffff'
+            }],
+        });
+    },
+
+    animeblockrech:function (nmrdublock) { //pour animer lire dire///////////////////////////////////
+        anime({
+            targets:document.getElementById('block'+(nmrdublock)),
+            translateY:[{value:300,duration:800},{value: 0}],
+            translateX: 0,
+            opacity:1,
             borderColor:[{value:'#8affb1',duration:800},{
                 value: '#000000'
             }],
@@ -39,42 +46,8 @@ animations.prototype={
         });
     },
 
-    animereplaceblock:function(nmrdublockARemplacer,nmrDuBlockRemplacent){
-        let remplacent=document.getElementById('block'+(nmrDuBlockRemplacent+1));
-        anime({
-            targets:remplacent,
-            translateY:[{value:200,duration:500},
-                {value: 20,duration: 500}
-            ],
-            translateX:[{value:(270*(nmrdublockARemplacer-nmrDuBlockRemplacent)),duration:500},
-                {value:(270*(nmrdublockARemplacer-nmrDuBlockRemplacent)),duration:500}
-            ]
 
-        });
-    },
-    animenreg:function (nmrDuBlock,nmrEnreg,color) {
-        let a=document.getElementById('enreg'+(nmrEnreg+1)+'block'+(nmrDuBlock+1));
-        anime({
-            targets:a,
-            width:[{value:21 ,duration:500},
-                {value: 20}
-            ],
-            height:[{value:21,duration:500},
-                {value: 20}],
-            backgroundColor:[{value:color,
-                duration:500,},
-                {
-                    value: '#ffffff'
-                }]
-        })
 
-    },
-    anime_border_enreg:function (nmrBlock,nmrEnreg,borderColor) {
-        anime({
-            targets:'enreg'+(nmrEnreg+1)+'block'+(nmrBlock+1),
-            borderTopColor:borderColor,
-        });
-    },
 
 
     animrech1:function(x) { /////////////////////////////////////////////////////////////////////
@@ -387,15 +360,25 @@ class TObVC{
          for(j=0;j<this.tete.tailleMax;j++){
          n=document.getElementById('enreg'+(j+1)+'block'+i);
              a.animrech1(n);
+             a.animeblockrech(i);
              await sleep(500);
          }
+
+
          i++;
 
+
      }
+
+
+
+
 
          for(j=0;j<enrg;j++){
              n=document.getElementById('enreg'+(j+1)+'block'+bloc);
              a.animrech1(n);
+             a.animeblockrech(i);
+
              await sleep(500);
          }
 
@@ -411,7 +394,9 @@ class TObVC{
       for(j=enrg;j<this.tete.tailleMax;j++){
             n=document.getElementById('enreg'+(j+1)+'block'+bloc);
             a.animrech2(n);
-            await sleep(500);
+          a.animeblockrech(i);
+
+          await sleep(500);
 
         }
 
@@ -426,6 +411,8 @@ class TObVC{
           for(j=enrg;j<x;j++){
               n=document.getElementById('enreg'+(j+1)+'block'+bloc);
               a.animrech2(n);
+              a.animeblockrech(i);
+
               await sleep(500);
 
           }
@@ -660,6 +647,7 @@ class TObVC{
 
 
    async suprimer(cle){
+       this.restcolorsenrg();
         var x=this.recherche2(cle);
         await sleep(1000);
         if(x[0]==true){
@@ -669,7 +657,7 @@ class TObVC{
                 this.tabBloc[a+1].information[b-this.tabBloc[a].tailleMax]=1;
                 var idenrg='enreg'+(b-this.tabBloc[a].tailleMax+1)+'block'+(a+1);
                 var n=document.getElementById(idenrg);
-                n.innerHTML+='<p>'+1+'</p>';
+                n.innerHTML='<p>'+1+'</p>';
 
             }
             else
@@ -697,32 +685,13 @@ class TObVC{
             divenreg.className='Tenreg';
             divblock.appendChild(divenreg);
         }
-       /* let divtaille=document.createElement('div');
-        divtaille.className='casevide';
-        divtaille.id='casevide'+(p+1);
-        divtaille.innerHTML='<P>0</p>';
-        divblock.appendChild(divtaille);
-        //return this.tete(1)+1;*/
+
 
 
     }
 
 
-  /* chargementInitial(){
 
-      //  this.alloc_bloc(0);
-
-       fich.insertion(5,"yrrdrsq");
-        fich.insertion(45,"uyijihu");
-         fich.insertion(78,"xcbnd");
-        // fich.insertion(12,"fewsd");
-        fich.insertion(9,"ohyjmo");
-        // fich.insertion(91,"zzzzzz");
-      /* for(var t=1;t<=this.tete.nbBloc;t++){
-           this.alloc_bloc(t);
-       }
-
-    }*/
 
 
 
@@ -788,8 +757,6 @@ tabbloc.push(bloc10);
 fich=new TObVC(t,tabbloc);
 
 
-/*fich.insertion(12,'jjjjkjjjj');
-fich.insertion(16,"hhhhhhh")*/
 for(var t=0;t<fich.tabBloc.length;t++){
     fich.alloc_bloc(t);
 }
@@ -827,3 +794,8 @@ function supp() {
 document.getElementById('inserer').onclick=insere;
 document.getElementById('rechercher').onclick=rech;
 document.getElementById('supprimer').onclick=supp;
+
+fich.insertion(5,"hbgvfcd");
+fich.insertion(6,"hbgvfcd");
+fich.insertion(7,"hbgvfcd");
+
